@@ -90,12 +90,12 @@ ${answers.license}
 ${answers.description}
 
 ## Table of Contents 📖
-- [Installation](#installation-⚙️)
-- [Usage](#usage-🔑)
+- [Installation](#installation) ⚙️
+- [Usage](#usage) 🔑
 - [Contributing](#contributing)
-- [Test](#tests-🧪)
+- [Tests](#tests) 🧪
 ${link(answers.license.message)}
-- [link](#license-📝)
+- [link](#license) 📝
 - [Question](#question)
 
 ## Installation ⚙️
@@ -111,8 +111,8 @@ ${answers.contributing}
 ${answers.tests}
 
 ## License 📝
-```click the license badge at the beginning of the document to get more info
-```
+'click the license badge at the beginning of the document to get more info'
+
 
 ## Question 🙋🏾‍♂️ 🙋🏼 🙋🏻‍♀️ 🙋🏿‍♀️ 🙋🏼‍♂️
 ${answers.question}
