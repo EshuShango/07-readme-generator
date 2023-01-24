@@ -54,7 +54,7 @@ const questions = [
           "[![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/)",
       },
     ],
-    message: "Provide information on the license for the project:",
+    message: "Provide information on the license for the project"
   },
   {
     type: "input",
@@ -65,6 +65,12 @@ const questions = [
     type: "input",
     name: "email",
     message: "Enter your email:",
+  },
+  {
+    type: "input",
+    name: "question",
+    message: "Enter any questions that you have:",
+    
   },
 ];
  
@@ -84,15 +90,13 @@ ${answers.license}
 ${answers.description}
 
 ## Table of Contents 📖
-//? how do i add the table of contents 
-//? and make them as links so you can click on one and go to that sec
 - [Installation](#installation-⚙️)
 - [Usage](#usage-🔑)
-- [Contributing] (#contributing)
+- [Contributing](#contributing)
 - [Test](#tests-🧪)
-${link(answers.license)}
+${link(answers.license.message)}
 - [link](#license-📝)
-- [Question](#question- 🙋🏾‍♂️ 🙋🏼 🙋🏻‍♀️ 🙋🏿‍♀️ 🙋🏼‍♂️)
+- [Question](#question)
 
 ## Installation ⚙️
 ${answers.installation}
@@ -107,10 +111,11 @@ ${answers.contributing}
 ${answers.tests}
 
 ## License 📝
-${answers.license.message}
-
+```click the license badge at the beginning of the document to get more info
+```
 
 ## Question 🙋🏾‍♂️ 🙋🏼 🙋🏻‍♀️ 🙋🏿‍♀️ 🙋🏼‍♂️
+${answers.question}
 
 You can also find me on GitHub at: [${answers.github}](https://www.github.com/${answers.github})
 
